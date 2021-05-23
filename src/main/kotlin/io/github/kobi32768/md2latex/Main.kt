@@ -1,11 +1,6 @@
 package io.github.kobi32768.md2latex
 
 import java.nio.file.*
-import java.io.IOException
-import java.nio.charset.Charset
-import java.util.stream.Collectors
-import java.util.stream.Stream
-import kotlin.io.FileAlreadyExistsException
 import kotlin.io.NoSuchFileException
 
 fun main() {

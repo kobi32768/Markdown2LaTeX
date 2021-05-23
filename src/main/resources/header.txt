@@ -1,1 +1,36 @@
+\documentclass[dvipdfmx, fleqn]{jsarticle}
+\usepackage[per-mode=symbol]{siunitx}
+\usepackage[margin=30mm,top=25mm]{geometry}
+\usepackage{listings,jvlisting}
+\usepackage{graphicx}
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{nccmath}
+\usepackage{array}
+\usepackage{tikz}
+\usetikzlibrary{intersections, calc, arrows.meta}
+\pagestyle{empty}
+
+\lstset{
+    basicstyle={\ttfamily},
+    identifierstyle={\small},
+    commentstyle={\smallitshape},
+    keywordstyle={\small\bfseries},
+    ndkeywordstyle={\small},
+    stringstyle={\small\ttfamily},
+    frame={tb},
+    breaklines=true,
+    columns=[l]{fullflexible},
+    numbers=none,
+    xrightmargin=0zw,
+    xleftmargin=0zw,
+    numberstyle={\scriptsize},
+    stepnumber=1,
+    numbersep=1zw,
+    lineskip=-0.5ex,
+}
+
 \begin{document}
+
+\setlength{\parindent}{0pt}
+\setlength{\mathindent}{15mm}

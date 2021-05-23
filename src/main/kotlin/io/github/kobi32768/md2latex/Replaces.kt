@@ -50,3 +50,16 @@ fun replaceEscapes(lineIn: String): String {
     line = line.replace("""$""", """\$""")
     return line
 }
+
+fun replaceSigns(lineIn: String): String {
+    var line = lineIn
+    line = line.replace("->", """$\rightarrow$""")
+    line = line.replace("<-", """$\leftarrow$""")
+    line = line.replace("=>", """$\Rightarrow$""")
+    line = line.replace("<=", """$\Leftarrow$""")
+    line = line.replace("-->", """$\longrightarrow$""")
+    line = line.replace("<--", """$\longleftarrow$""")
+    line = line.replace("==>", """$\Longrightarrow$""")
+    line = line.replace("<==", """$\Longleftarrow$""")
+    return line
+}

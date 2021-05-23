@@ -5,7 +5,7 @@ fun replaceHeader(lineIn: String): String {
     if ("# " in line) {
         line = line.replace("### ", """\subsubsection{""")
         line = line.replace("## ", """\subsection{""")
-        line = line.replace("# ", """\subsection{""")
+        line = line.replace("# ", """\section{""")
         line = "$line}"
     }
     return line

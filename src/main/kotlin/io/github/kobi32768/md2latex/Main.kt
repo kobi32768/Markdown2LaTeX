@@ -62,5 +62,6 @@ fun replaceElements(lineIn: String): String {
     line = replaceDecoration(line)
     line = replaceNewline(line)
     line = replaceEscapes(line)
+    line = replaceSigns(line)
     return "$line\n"
 }

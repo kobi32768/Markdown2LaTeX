@@ -27,9 +27,10 @@ fun main() {
         val streamF = Files.lines(pathFooter)
         val sb = StringBuilder()
 
-        streamH.forEach { sb.append( "$it\n\n" ) }
+        streamH.forEach { sb.append( "$it\n" ) }
+        sb.append( "\n" )
         streamD.forEach { sb.append( replaceElements(it) ) }
-        streamF.forEach { sb.append( it ) }
+        streamF.forEach { sb.append( "$it\n" ) }
         file = sb.toString()
 
         val mdFilename = pathIn.split("/").last()
